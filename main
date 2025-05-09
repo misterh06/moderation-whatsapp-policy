@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modération WhatsApp Collégiens</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Styles personnalisés pour améliorer le design (optionnel, pour plus de contrôle) */
+        body {
+            font-family: 'Inter', sans-serif; /* Utilisation de la police Inter */
+        }
+        .heading-gradient {
+            background: linear-gradient(to right, #6b7280, #374151); /* Dégradé de gris */
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-gray-100"> <header class="bg-white shadow-md rounded-b-lg">
+        <div class="container mx-auto px-4 py-6 flex justify-between items-center">
+            <h1 class="text-xl font-semibold text-gray-800 heading-gradient">Modération WhatsApp Collégiens</h1>
+            <nav class="hidden md:block">
+                <ul class="flex space-x-6">
+                    <li><a href="#introduction" class="text-gray-700 hover:text-blue-600 transition duration-300">Introduction</a></li>
+                    <li><a href="#harcelement" class="text-gray-700 hover:text-blue-600 transition duration-300">Harcèlement</a></li>
+                    <li><a href="#contenu-injurieux" class="text-gray-700 hover:text-blue-600 transition duration-300">Contenu Injurieux</a></li>
+                    <li><a href="#discrimination" class="text-gray-700 hover:text-blue-600 transition duration-300">Discrimination</a></li>
+                    <li><a href="#propos-inappropries" class="text-gray-700 hover:text-blue-600 transition duration-300">Propos Inappropriés</a></li>
+                </ul>
+            </nav>
+            <button id="hamburger-btn" class="md:hidden text-gray-700 focus:outline-none" aria-label="Menu">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <div id="mobile-menu" class="hidden fixed top-0 left-0 w-full h-full bg-gray-900 bg-opacity-90 z-50">
+        <div class="bg-white w-80 h-full absolute right-0 p-6 rounded-l-lg shadow-xl">
+            <div class="flex justify-end mb-4">
+                <button id="close-menu-btn" class="text-gray-700 focus:outline-none" aria-label="Fermer le menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+            <nav class="block">
+                <ul class="space-y-4">
+                    <li><a href="#introduction" class="block text-gray-700 hover:text-blue-600 transition duration-300 text-lg">Introduction</a></li>
+                    <li><a href="#harcelement" class="block text-gray-700 hover:text-blue-600 transition duration-300 text-lg">Harcèlement</a></li>
+                    <li><a href="#contenu-injurieux" class="block text-gray-700 hover:text-blue-600 transition duration-300 text-lg">Contenu Injurieux</a></li>
+                    <li><a href="#discrimination" class="block text-gray-700 hover:text-blue-600 transition duration-300 text-lg">Discrimination</a></li>
+                    <li><a href="#propos-inappropries" class="block text-gray-700 hover:text-blue-600 transition duration-300 text-lg">Propos Inappropriés</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <main class="container mx-auto px-4 py-8 space-y-8">
+        <section id="introduction" class="bg-white rounded-lg shadow-md p-6">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4 heading-gradient">Introduction</h2>
+            <p class="text-gray-700">
+                La communication via WhatsApp est devenue essentielle pour les collégiens.  Cependant, cela implique des responsabilités, notamment la modération des conversations pour prévenir les dérives. Ce site aborde les aspects importants de cette modération.
+            </p>
+        </section>
+
+        <section id="harcelement" class="bg-white rounded-lg shadow-md p-6">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4 heading-gradient">Harcèlement</h2>
+            <p class="text-gray-700 mb-4">
+                Le harcèlement en ligne, ou cyberharcèlement, est une réalité préoccupante. Il peut prendre de nombreuses formes :
+            </p>
+            <ul class="list-disc list-inside space-y-2 text-gray-700">
+                <li>Messages répétés et insultants</li>
+                <li>Diffusion de rumeurs ou de photos/vidéos compromettantes</li>
+                <li>Création de groupes malveillants</li>
+            </ul>
+            <p class="text-gray-700 mt-4">
+                Il est crucial de savoir identifier ces situations et d'agir en conséquence. La modération doit être ferme et защищает les victimes.
+            </p>
+        </section>
+
+        <section id="contenu-injurieux" class="bg-white rounded-lg shadow-md p-6">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4 heading-gradient">Contenu Injurieux</h2>
+            <p class="text-gray-700">
+                Les messages contenant des insultes, des grossièretés ou du langage offensant peuvent créer un environnement toxique.  La modération doit viser à :
+            </p>
+            <ul class="list-disc list-inside space-y-2 text-gray-700">
+                <li>Supprimer rapidement les messages incriminés</li>
+                <li>Avertir les auteurs de ces messages</li>
+                <li>Promouvoir un langage respectueux et approprié</li>
+            </ul>
+        </section>
+
+        <section id="discrimination" class="bg-white rounded-lg shadow-md p-6">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4 heading-gradient">Discrimination</h2>
+            <p class="text-gray-700">
+                La discrimination, qu'elle soit basée sur l'origine, la religion, le genre, l'orientation sexuelle, un handicap, ou toute autre caractéristique, est inacceptable.  La modération doit être particulièrement vigilante face à :
+            </p>
+            <ul class="list-disc list-inside space-y-2 text-gray-700">
+                <li>Propos racistes ou xénophobes</li>
+                <li>Messages homophobes ou transphobes</li>
+                <li>Discrimination envers les personnes handicapées</li>
+            </ul>
+            <p class="text-gray-700 mt-4">
+                La lutte contre la discrimination est une priorité absolue.
+            </p>
+        </section>
+
+        <section id="propos-inappropries" class="bg-white rounded-lg shadow-md p-6">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4 heading-gradient">Propos Inappropriés</h2>
+            <p class="text-gray-700">
+                Outre les catégories précédentes, certains propos peuvent être inappropriés sans nécessairement relever du harcèlement ou de la discrimination.  Cela inclut :
+            </p>
+            <ul class="list-disc list-inside space-y-2 text-gray-700">
+                <li>Messages à caractère sexuel</li>
+                <li>Incitation à la violence ou à des comportements dangereux</li>
+                <li>Partage de contenu choquant ou perturbant</li>
+            </ul>
+            <p class="text-gray-700 mt-4">
+                Une modération proactive est nécessaire pour maintenir un environnement sain et sécurisé.
+            </p>
+        </section>
+    </main>
+
+    <footer class="bg-gray-200 rounded-t-lg py-4">
+        <div class="container mx-auto px-4 text-center text-gray-600">
+            © 2024 Modération WhatsApp Collégiens. Tous droits réservés.
+        </div>
+    </footer>
+
+    <script>
+        const hamburgerBtn = document.getElementById("hamburger-btn");
+        const mobileMenu = document.getElementById("mobile-menu");
+        const closeMenuBtn = document.getElementById("close-menu-btn");
+        const mobileMenuLinks = mobileMenu.querySelectorAll("a");
+        const navLinks = document.querySelectorAll('.nav-links a');
+        const sections = document.querySelectorAll('section');
+
+        function toggleMobileMenu() {
+            mobileMenu.classList.toggle("hidden");
+        }
+
+        hamburgerBtn.addEventListener("click", toggleMobileMenu);
+        closeMenuBtn.addEventListener("click", toggleMobileMenu);
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener("click", toggleMobileMenu);
+        });
+
+        document.addEventListener('click', (event) => {
+            if (!mobileMenu.classList.contains('hidden') && !mobileMenu.contains(event.target) && event.target !== hamburgerBtn) {
+                toggleMobileMenu();
+            }
+        });
+
+        function updateActiveNavLink() {
+            let currentSectionId = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (window.scrollY >= sectionTop - 100 && window.scrollY < sectionTop + sectionHeight - 100) {
+                    currentSectionId = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').slice(1) === currentSectionId) {
+                    link.classList.add('active');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', updateActiveNavLink);
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
